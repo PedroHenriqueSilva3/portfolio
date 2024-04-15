@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src=""></script>
+    <title>Pedro Henrique</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a onclick="scrollToSection('especialidades')">Especialidade</a></li>
+                    <li><a onclick="scrollToSection('sobre')">Sobre</a></li>
+                    <li><a onclick="scrollToSection('portfolio')">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a onclick="scrollToSection('contatos')">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+            <div class="btn-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a onclick="scrollToSection('especialidades')">Especialidade</a></li>
+                        <li><a onclick="scrollToSection('sobre')">Sobre</a></li>
+                        <li><a onclick="scrollToSection('portfolio')">Projetos</a></li>
+                        <li><a onclick="scrollToSection('contatos')">Contato</a></li>
+                        <li><a href="Currículo Pedro Henrique atualizado.docx" download>Baixar CV</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Transformando sonhos em realidade<span>.</span></h1>
+                        <p id="typeText">Seja muito bem-vindo ao meu portfólio</p>
+                        <!-- colocar efeito de digitação e como se tivesse escrito errado -->
+                        <div class="btn-contato">
+                            <a href="Currículo Pedro Henrique atualizado.docx" download>
+                                <button>Baixar CV</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="img-topo-site">
+                        <img src="images/pedrinho.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="especialidades" id="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-jsx"></i>
+                        <h3>REACT NATIVE</h3>
+                        <p>React Native é um framework de desenvolvimento de aplicativos móveis que permite
+                             aos desenvolvedores criar aplicativos para iOS e Android usando JavaScript e React,
+                              uma biblioteca popular para construção de interfaces de usuário. Com React Native,
+                               é possível desenvolver aplicativos nativos com uma única base de código, oferecendo
+                                alto desempenho e uma experiência de usuário consistente em diferentes plataformas móveis.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-sql"></i>
+                        <h3>MYSQL</h3>
+                        <p>MySQL é um sistema de gerenciamento de banco de dados relacional, frequentemente utilizado
+                             em conjunto com PHP para armazenar e manipular dados em aplicações web. Ele oferece
+                              uma estrutura robusta para criar, organizar e consultar bancos de dados, permitindo que
+                               os desenvolvedores armazenem e recuperem informações de maneira eficiente.</p>
+                    </div>
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-php"></i>
+                        <h3>PHP</h3>
+                        <p>
+                            PHP é uma linguagem de programação amplamente utilizada para desenvolvimento web, 
+                            conhecida por sua capacidade de criar páginas dinâmicas e interativas. Com PHP, os
+                             desenvolvedores podem incorporar scripts diretamente em HTML para criar funcionalidades
+                              como formulários, manipulação de bancos de dados e interação com o usuário.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto2.jpeg" alt="">
+                    </div>
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU O PEDRO HENRIQUE</span></h2>
+                        <p>Tenho 17 anos e sou um programador fullstack com foco em back-end, atualmente curso desenvolvimento de sistemas
+                            na ETEC onde tenho conhecimeto de linguagens como HTML, CSS, JAVASCRIPT, PHP, C#, JAVA, NODE.JS,
+                             REACT NATIVE e MYSQL, utilizando os conhecimentos que possuo desenvolvo aplicações web e mobile além de programas desktop</p>
+                        <p>Alguns dos meus passatempos são jogar vôlei que é algo que me diverte muito, jogar jogos digitais com amigos, escutar músicas e assistir séries, filmes e animes.</p>
+
+                        <div class="btn-social">
+                            <a href="https://wa.me/5511972560704"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://www.instagram.com/pedro_henrique_1104?igsh=bzFjMzh0dTE2Ym8="><button><i class="bi bi-instagram"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/projeto1.png);">
+                        <div class="overlay">Projeto Aplicativo dos biomas brasileiros</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/projeto2.png);">
+                        <div class="overlay"><a href="https://gx.games/pt-br/games/u66p3l/sky-race/">Jogo Sky Race</a></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/projeto3.png);">
+                        <div class="overlay">Projeto Mercado virtual</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contatos" id="contatos">
+            <div class="interface">
+                <h2 class="titulo">ENTRE EM <span>CONTATO.</span></h2>
+                <div class="flex">
+                    <div class="card-contact">
+                        <a href="https://wa.me/5511972560704"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+
+                    <div class="card-contact">
+                        <a href="mailto:pedrohsilva0407@outlook.com"><i class="bi bi-envelope"></i></a>
+                    </div>
+
+                    <div class="card-contact">
+                        <a href="tel:11972560704"><i class="bi bi-telephone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="line-footer">
+                        <p><i class="bi bi-envelope"></i> <a
+                                href="mailto:pedrohsilva0407@outlook.com">pedrohsilva0407@outlook.com</a></p>
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://wa.me/5511972560704"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://www.instagram.com/pedro_henrique_1104?igsh=bzFjMzh0dTE2Ym8="><button><i class="bi bi-instagram"></i></button></a>
+                    </div>
+                    
+                </div>
+                <div class="borda"></div>
+            </div>
+
+            
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="typewrite.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>
